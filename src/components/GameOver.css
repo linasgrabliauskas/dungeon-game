@@ -1,0 +1,50 @@
+.game-over {
+     position: fixed;
+     z-index: 1000;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,0.6);
+} 
+.game-over__content {
+     width: 35%;
+     margin: 20% auto;
+     padding: 30px;
+     border: 1px solid #000;
+     border-image: url('../assets/images/border3.png') 30 / 8px round;
+     background-color: rgb(20,20,20);
+     text-align: center;
+     font-size: 32px;
+}
+.game-over__controls-btn{
+     margin-top: 20px;
+     border: none;
+     border-radius: 3px;
+     padding: 10px 20px;
+     font-size: 14px;
+     background-color: var(--orange);
+}
+
+.game-over__controls-btn:hover{
+     background-color: #fff;
+     color: #000;
+     cursor: pointer;
+}
+
+.game-over__controls{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+.game-over__controls button{
+     margin: 0 8px;
+}
+
+@media only screen and (max-width: 600px){
+
+     .game-over__content {
+          width: 80%;
+          margin: 30% auto;
+     }
+}

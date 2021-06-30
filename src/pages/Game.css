@@ -1,0 +1,71 @@
+.game{
+     padding: 35px;
+     height: 100%;
+     position: relative;
+     border: 1px solid #000;
+     border-image: url('../assets/images/border3.png') 30 / 8px round;
+}
+
+.game__nav{
+     padding: 30px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.game__nav li{ 
+     width: 50%;
+     padding: 30px;
+}
+
+.game__nav li a{
+     display: inline-block;
+     background-color: rgb(20, 20, 20);
+     border: 1px solid #000;
+     border-image: url('../assets/images/border3.png') 30 / 3px round;
+     margin-top: 10px;
+     padding: 20px 20px;
+}
+.game__nav li a:hover{
+     background-color: rgb(2, 2, 2);
+}
+.game__nav li a img{
+     width: 80px;
+     height: 80px;
+}
+
+.game__stats{
+     display: flex;
+     justify-content: center;
+}
+.game__stats h4{
+     padding: 10px 30px;
+}
+
+@media only screen and (max-width: 600px){
+	.game{
+          padding: 15px;
+          border: none;
+          border-radius: 0;
+     }
+     .game__nav{
+          padding: 0px;
+     }
+     .game__nav li{ 
+          padding: 15px;
+     }
+     .game__nav li a img{
+          width: 40px;
+          height: 40px;
+     }
+     .game__stats h4{
+          padding: 5px;
+          margin: 0 5px;
+     }
+     .game .message{
+          display: none;
+     }
+     .game__stats{
+          flex-wrap: wrap;
+     }
+}
+

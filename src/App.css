@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* Variables */
+:root{
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --accent-font: 'Kaushan Script', cursive;
+  /* Colors */
+  --dark: #272727a4;
+  --light-blue: rgb(6,214,224);
+  --light: #F1F1F2;
+  --orange: #fc9200;
+  --primary: #1d5ae7;
+  /* Font sizes */
+  --font-xs: 8px;
+  --font-sm: 10px;
+  --font-md: 14px;
+  --font-lg: 20px;
+  --font-xlg: 26px;
+}
+
+/* Reset */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: var(--main-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Utility */
+.heading-1{
+  font-family: var(--accent-font);
+  letter-spacing: 8px;
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+.heading-2{
+  font-family: var(--accent-font);
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+.heading-3{
+  font-family: var(--accent-font);
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+.dungeon-bg{
+  border-radius: 8px;
+  background-color: #000;
+  background-image: url('./assets/images/dungeon7.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.dungeon-inner{
+  background-color: #000;
+  background-image: url('./assets/images/dungeon2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+}
+
+.btn{
+  margin: 5px;
+  display: inline-block;
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #111;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.btn svg{
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.btn-accent{
+  padding: 12px 16px;
+  border-width: 2px;
+  border-style: outset;
+}
+.btn-light{
+  padding: 12px 16px;
+  border-width: 2px;
+  border-style: outset;
+  border-color:#fff;
+}
+.btn-small{
+  padding: 2px 15px;
+}
+.btn-small svg{
+  margin: 0;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.menu{
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  left: 20px;
+}
+.menu-right{
+  left: auto;
+  right: 20px;
+}
+
+.combat-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,1);
+  font-family: var(--accent-font);
+}
+
+.message{
+  border: 1px solid var(--primary);
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  height: 0;
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: inherit;
+  padding: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333; 
+} 
+
+/* Selection transparent */
+::selection {
+  background-color: inherit;
+  color: inherit; 
+}
+
+/* App */
+.App {
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(2,2,2);
+}
+
+.App .container{
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 5vh 0;
+}
+
+@media only screen and (max-width: 600px){
+  .btn{
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .btn-accent{
+    padding: 8px 10px;
+  }
+  .btn-light{
+    padding: 8px 10px;
+  }
+  .btn-small{
+    padding: 2px 8px;
+  }
+
+  .menu{
+    top: 10px;
+    left: 10px;
+  }
+
+  .menu-bottom{
+    top: auto;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .menu-right{
+    left: auto;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .App .container{
+    padding: 0;
+  }
+  .message{
+    display: none;
+  }
+}

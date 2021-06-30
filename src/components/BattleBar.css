@@ -1,0 +1,134 @@
+.battle-bar{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.battle-bar__equiped{
+     width: 30%;
+     display: flex;
+}
+
+.battle-bar__equiped li{
+     border: 1px solid #000;
+     border-image: url('../assets/images/border3.png') 30 / 3px round;
+     margin: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+     position:relative;
+}
+
+.battle-bar__equiped li img{
+     width: 60px;
+     height: 60px;
+}
+
+.battle-bar__actions{
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.battle-bar__actions button{
+     width: 300px;
+     background-color: var(--primary);
+}
+
+.battle-bar__stats{
+     width: 30%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+.battle-bar__stats h4:last-child{
+     display: none;
+}
+
+/* Tooltip */
+.battle-bar__equiped-item-switch {
+     position: absolute;
+     bottom: 115%;
+     left: 0;
+     z-index: 90;
+     display: flex;
+     min-width: 60px;
+     min-height: 60px;
+     border-radius: 6px;
+     padding: 5px;
+     background-color: rgb(20,20,20);
+     color: #fff;
+     text-align: center;
+     border: 1px solid rgb(87, 87, 87);
+}
+
+/* Tooltip Arrow down */
+.battle-bar__equiped-item-switch::after {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 15%;
+     margin-left: -10px;
+     border-width: 10px;
+     border-style: solid;
+     border-color: rgb(87, 87, 87) transparent transparent transparent;
+}
+
+.battle-bar__equiped-item-switch li{
+     width: 60px;
+}
+.battle-bar__equiped-item-switch li:hover{
+     cursor: pointer;
+}
+.battle-bar__equiped-item-switch li img{
+     max-width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+
+     .battle-bar{
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+     }
+     
+     .battle-bar__equiped{
+          order: 3;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+     }
+     .battle-bar__actions{
+          order: 1;
+          width: 100%;
+     }
+     .battle-bar__actions button{
+          width: 80%;
+     }
+     
+
+     .battle-bar__stats{
+          order: 2;
+          margin: 10px 0;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;  
+     }
+     .battle-bar__stats h4{
+          width: 100%;
+          margin: 5px 0;
+     }
+     .battle-bar__stats h4:last-child{
+          display: block;
+     }
+	
+     .battle-bar__equiped-item-switch {
+          flex-direction: column;
+     }
+}
