@@ -1,52 +1,53 @@
-.inventory{
-     padding: 35px;
-     height: 100%;
-     position: relative;
-     border: 1px solid #000;
-     border-image: url('../assets/images/border3.png') 30 / 8px round;
+.inventory {
+  padding: 35px;
+  height: 100%;
+  min-height: 90vh;
+  position: relative;
+  border: 1px solid #000;
+  border-image: url("../assets/images/border3.png") 30 / 8px round;
 }
-.inventory h1{
-     margin-bottom: 10px;
-}
-
-.inventory ul{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-}
-.inventory ul li{
-     margin: 10px 0;
-     width: 23%;
+.inventory h1 {
+  margin-bottom: 10px;
 }
 
-.inventory__stats{
-     display: flex;
-     justify-content: center;
+.inventory ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.inventory ul li {
+  margin: 10px 0;
+  width: 23%;
 }
 
-.inventory__stats h4{
-     padding: 10px 30px;
+.inventory__stats {
+  display: flex;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 600px){
-	.inventory{
-          padding: 15px;
-          height: auto;
-          border: none;
-          border-radius: 0;
-     }
-     .inventory h1{
-          margin-top: 40px;
-     }
-     
-     .inventory ul li{
-          width: 80%;
-     }
-     .inventory__stats{
-          flex-wrap: wrap;
-     }
-     .inventory .message{
-          display: none;
-     }
+.inventory__stats h4 {
+  padding: 10px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .inventory {
+    padding: 15px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+  }
+  .inventory h1 {
+    margin-top: 40px;
+  }
+
+  .inventory ul li {
+    width: 80%;
+  }
+  .inventory__stats {
+    flex-wrap: wrap;
+  }
+  .inventory .message {
+    display: none;
+  }
 }

@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 /* Variables */
-:root{
+:root {
   /* Fonts */
-  --main-font: 'Roboto', sans-serif;
-  --accent-font: 'Kaushan Script', cursive;
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Kaushan Script", cursive;
   /* Colors */
   --dark: #272727a4;
-  --light-blue: rgb(6,214,224);
-  --light: #F1F1F2;
+  --light-blue: rgb(6, 214, 224);
+  --light: #f1f1f2;
   --orange: #fc9200;
   --primary: #1d5ae7;
   /* Font sizes */
@@ -21,8 +21,8 @@
 }
 
 /* Reset */
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -34,52 +34,52 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
 /* Utility */
-.heading-1{
+.heading-1 {
   font-family: var(--accent-font);
   letter-spacing: 8px;
   font-size: 40px;
   font-weight: 500;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.heading-2{
+.heading-2 {
   font-family: var(--accent-font);
   letter-spacing: 4px;
   font-size: 20px;
 }
-.heading-3{
+.heading-3 {
   font-family: var(--accent-font);
   letter-spacing: 4px;
   font-size: 16px;
 }
 
-.dungeon-bg{
+.dungeon-bg {
   border-radius: 8px;
   background-color: #000;
-  background-image: url('./assets/images/dungeon7.jpg');
+  background-image: url("./assets/images/dungeon7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.dungeon-inner{
+.dungeon-inner {
   background-color: #000;
-  background-image: url('./assets/images/dungeon2.jpg');
+  background-image: url("./assets/images/dungeon2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 40px;
 }
 
-.btn{
+.btn {
   margin: 5px;
   display: inline-block;
   padding: 8px 10px;
@@ -91,45 +91,45 @@ ul{
   font-size: 14px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
 }
-.btn svg{
+.btn svg {
   margin-right: 5px;
   vertical-align: text-top;
 }
 
-.btn-accent{
+.btn-accent {
   padding: 12px 16px;
   border-width: 2px;
   border-style: outset;
 }
-.btn-light{
+.btn-light {
   padding: 12px 16px;
   border-width: 2px;
   border-style: outset;
-  border-color:#fff;
+  border-color: #fff;
 }
-.btn-small{
+.btn-small {
   padding: 2px 15px;
 }
-.btn-small svg{
+.btn-small svg {
   margin: 0;
 }
 
-.hide{
+.hide {
   visibility: hidden;
 }
 
-.menu{
+.menu {
   position: absolute;
   z-index: 999;
   top: 20px;
   left: 20px;
 }
-.menu-right{
+.menu-right {
   left: auto;
   right: 20px;
 }
 
-.combat-message{
+.combat-message {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,13 +139,13 @@ ul{
   justify-content: center;
   align-items: flex-end;
   padding: 10px;
-  text-shadow: 2px 2px 0px rgba(0,0,0,1);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
   font-family: var(--accent-font);
 }
 
-.message{
+.message {
   border: 1px solid var(--primary);
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   margin: 10px;
   padding: 20px;
@@ -166,17 +166,17 @@ ul{
   padding: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #555; 
-  border-radius:10px;
+  background: #555;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #333; 
-} 
+  background: #333;
+}
 
 /* Selection transparent */
 ::selection {
   background-color: inherit;
-  color: inherit; 
+  color: inherit;
 }
 
 /* App */
@@ -184,54 +184,54 @@ ul{
   min-height: 100vh;
   text-align: center;
   color: #fff;
-  background-color: rgb(2,2,2);
+  background-color: rgb(2, 2, 2);
 }
 
-.App .container{
+.App .container {
   max-width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 5vh 0;
 }
 
-@media only screen and (max-width: 600px){
-  .btn{
+@media only screen and (max-width: 600px) {
+  .btn {
     padding: 8px 10px;
     font-size: 14px;
   }
-  
-  .btn-accent{
+
+  .btn-accent {
     padding: 8px 10px;
   }
-  .btn-light{
+  .btn-light {
     padding: 8px 10px;
   }
-  .btn-small{
+  .btn-small {
     padding: 2px 8px;
   }
 
-  .menu{
+  .menu {
     top: 10px;
     left: 10px;
   }
 
-  .menu-bottom{
+  .menu-bottom {
     top: auto;
     bottom: 15px;
     left: 15px;
   }
 
-  .menu-right{
+  .menu-right {
     left: auto;
     right: 20px;
   }
 }
 
-@media only screen and (max-width: 600px){
-  .App .container{
+@media only screen and (max-width: 600px) {
+  .App .container {
     padding: 0;
   }
-  .message{
+  .message {
     display: none;
   }
 }

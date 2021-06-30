@@ -1,79 +1,114 @@
-.login{
-     border-radius: 8px;
-     padding: 35px;
-     height: 100%;
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding-top: 15%;
-     position: relative;
-     border: 1px solid #000;
-     border-image: url('../assets/images/border3.png') 30 / 8px round;
+.login {
+  border-radius: 8px;
+  padding: 35px;
+  height: 100%;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  position: relative;
+  border: 1px solid #000;
+  border-image: url("../assets/images/border3.png") 30 / 8px round;
 }
 
-.login h1{
-     margin-bottom: 20px;
+.login h1 {
+  margin-bottom: 20px;
 }
 
-.login__form{
-     margin-top: 37px;
-     width: 220px;
-     display: flex;
-     flex-direction: column;
+.login__form {
+  margin-top: 37px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
 }
-.login__form input{
-     margin-bottom: 10px;
-     padding: 8px;
-     padding-left: 20px;
-     border: none;
-     border-radius: 8px;
-     font-family: var(--main-font);
+.login__form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--main-font);
 }
-.login__form input:focus{
-     outline: 0;
-     box-shadow: 0 0 0 3px var(--primary);
+.login__form input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--primary);
 }
-.login__form button{
-     margin: 0;
-}
-
-
-.flickering{
-     position: absolute;
-     top: 0;
-     left: 0;
-     border: 1px solid red;
-     width: 100%;
-     height: 100%;
-}
-@keyframes blink {50% { color: transparent }}
-.flickering span{
-     position: relative;
-     animation: 2s blink infinite 
-}
-.flickering span:nth-child(1){ left: -10%; top: 10%; animation-delay: 200ms;}
-.flickering span:nth-child(2){ left: -5%; top: 15%; animation-delay: 500ms;}
-.flickering span:nth-child(3){ left: 0%; top: 10%; animation-delay: 1500ms;}
-.flickering span:nth-child(4){ left: +17%; top: 10%; animation-delay: 700ms;}
-.flickering span:nth-child(5){ left: +8%; top: 50%; animation-delay: 500ms;}
-.flickering span:nth-child(6){ left: -12%; top: 40%; animation-delay: 1000ms;}
-.flickering span:nth-child(7){ left: +7%; top: 17%; animation-delay: 500ms;}
-.flickering span:nth-child(8){ left: -3%; top: 48%; animation-delay: 1500ms;}
-
-
-.info-message{
-     margin-top: 15px;
+.login__form button {
+  margin: 0;
 }
 
-.login form a{
-     color: var(--primary);
-     margin-top: 10px;
+.flickering {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+}
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+.flickering span {
+  position: relative;
+  animation: 2s blink infinite;
+}
+.flickering span:nth-child(1) {
+  left: -10%;
+  top: 10%;
+  animation-delay: 200ms;
+}
+.flickering span:nth-child(2) {
+  left: -5%;
+  top: 15%;
+  animation-delay: 500ms;
+}
+.flickering span:nth-child(3) {
+  left: 0%;
+  top: 10%;
+  animation-delay: 1500ms;
+}
+.flickering span:nth-child(4) {
+  left: +17%;
+  top: 10%;
+  animation-delay: 700ms;
+}
+.flickering span:nth-child(5) {
+  left: +8%;
+  top: 50%;
+  animation-delay: 500ms;
+}
+.flickering span:nth-child(6) {
+  left: -12%;
+  top: 40%;
+  animation-delay: 1000ms;
+}
+.flickering span:nth-child(7) {
+  left: +7%;
+  top: 17%;
+  animation-delay: 500ms;
+}
+.flickering span:nth-child(8) {
+  left: -3%;
+  top: 48%;
+  animation-delay: 1500ms;
 }
 
-@media only screen and (max-width: 600px){
-	.login{
-          border: none;
-          border-radius: 0;
-     }
+.info-message {
+  margin-top: 15px;
+}
+
+.login form a {
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    border: none;
+    border-radius: 0;
+  }
 }
